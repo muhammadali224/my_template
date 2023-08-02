@@ -1,0 +1,58 @@
+Hello
+Hi
+Welcome
+Languages
+Continue
+Ok
+Cancel
+Confirm
+Error
+Warning
+Save
+Edit
+Exit
+Yes
+No
+General
+Turn On
+Turn Off
+Delete
+Apply
+Search
+Notification
+Success
+Email
+User Name
+Password
+Phone
+Confirm Email
+Confirm Password
+Reset Email
+Reset Password
+Profile
+Loading
+Sign In
+Login
+Sign Up
+Register
+Account
+Dont Have an Account?
+Check
+Verification Code
+The Field must be Contain at Least
+The Field Max Number of Characters is
+The Field Can't Be Empty
+Are You Sure To Exit ?
+Home
+Setting
+Biometric
+Contact Us
+Call
+End
+Start
+Video Call
+Voice Call
+Location
+Next
+back
+Skip
