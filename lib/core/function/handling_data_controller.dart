@@ -1,4 +1,4 @@
-import '../class/response.dart';
+import '../class/custom_response.dart';
 import '../class/status_request.dart';
 
 handlingData(response) {
@@ -9,7 +9,7 @@ handlingData(response) {
   }
 }
 
-handlingFirebaseData(Response response) {
+handlingFirebaseData(CustomResponse response) {
   if (response.code == 200) {
     return StatusRequest.success;
   } else {

@@ -24,19 +24,19 @@ class TestController extends GetxController {
     update();
   }
 
-  addFirebaseData() async {
-    // if (formKey.currentState!.validate()) {
-    statusRequest = StatusRequest.loading;
-    update();
-
-    var response = await testData.addData("limits", {});
-    statusRequest = handlingFirebaseData(response);
-    if (StatusRequest.success == statusRequest) {
-      print("object");
-    }
-    update();
-    // }
-  }
+  // addFirebaseData() async {
+  //   // if (formKey.currentState!.validate()) {
+  //   statusRequest = StatusRequest.loading;
+  //   update();
+  //
+  //   var response = await testData.addData("limits", {});
+  //   statusRequest = handlingFirebaseData(response);
+  //   if (StatusRequest.success == statusRequest) {
+  //     print("object");
+  //   }
+  //   update();
+  //   // }
+  // }
 
   @override
   void onInit() {

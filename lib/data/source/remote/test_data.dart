@@ -1,5 +1,4 @@
 import '../../../core/class/crud.dart';
-import '../../../core/class/crud_firebase.dart';
 import '../../../core/constant/api_link.dart';
 
 class TestData {
@@ -12,11 +11,11 @@ class TestData {
     return response.fold((l) => l, (r) => r);
   }
 
-  addData(String collectionName, Map<String, dynamic> data) async {
-    var response =
-        await CRUDFirebase.addData(collectionName: collectionName, data: data);
-    return response;
-  }
+  // addData(String collectionName, Map<String, dynamic> data) async {
+  //   var response =
+  //       await crud.addData(collectionName: collectionName, data: data);
+  //   return response;
+  // }
 
   // Future<(List<QueryDocumentSnapshot<Object?>>, Response)> getTask(
   //     String collectionName) async {

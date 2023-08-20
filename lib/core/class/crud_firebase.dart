@@ -2,16 +2,19 @@
 //
 // import 'package:cloud_firestore/cloud_firestore.dart';
 // import 'package:firebase_storage/firebase_storage.dart';
-// import 'package:get/get.dart';
+import 'package:get/get.dart';
+
 //
-// import '../services/services.dart';
-// import 'custom_response.dart' as response_dart;
+import '../services/services.dart';
+import 'custom_response.dart' as response_dart;
+
 //
-// MyServices myServices = Get.find();
+MyServices myServices = Get.find();
+
 //
-// class CRUDFirebase {
-//   static response_dart.CustomResponse myResponse =
-//   response_dart.CustomResponse();
+class CRUDFirebase {
+  static response_dart.CustomResponse myResponse =
+      response_dart.CustomResponse();
 //
 //   static var firestore = myServices.firestore;
 //   static var fireStorage = myServices.fireStorage;
@@ -201,4 +204,4 @@
 //
 //     return (downloadURL, myResponse);
 //   }
-// }
+}
