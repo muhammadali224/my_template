@@ -1,30 +1,26 @@
 import 'package:get/get.dart';
 
-validInput(String val, int min, int max, String type) {
-  if (type == "userName") {
-    if (!GetUtils.isUsername(val)) {
-      return 'userNameValidError'.tr;
-    }
-  }
+import '../constant/app_strings.dart';
 
+validInput(String val, int min, int max, String type) {
   if (type == "email") {
     if (!GetUtils.isEmail(val)) {
-      return 'emailValidError'.tr;
+      return AppStrings.emailValidError;
     }
   }
   if (type == "phone") {
     if (!GetUtils.isPhoneNumber(val)) {
-      return 'phoneValidError'.tr;
+      return AppStrings.phoneValidError;
     }
   }
 
   if (val.isEmpty) {
-    return 'emptyValidError'.tr;
+    return AppStrings.emptyValidError;
   }
   if (val.length < min) {
-    return 'minValidError'.tr + min.toString();
+    return AppStrings.minValidError + min.toString();
   }
   if (val.length > max) {
-    return 'maxValidError'.tr + max.toString();
+    return AppStrings.maxValidError + max.toString();
   }
 }

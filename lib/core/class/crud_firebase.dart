@@ -5,11 +5,11 @@
 import 'package:get/get.dart';
 
 //
-import '../services/services.dart';
+import '../services/app.service.dart';
 import 'custom_response.dart' as response_dart;
 
 //
-MyServices myServices = Get.find();
+AppServices myServices = Get.find();
 
 //
 class CRUDFirebase {

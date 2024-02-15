@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:get/get.dart';
 
-import '../../../controller/onboarding controller/onboarding_controller.dart';
+import '../../../controller/onboarding_controller/onboarding_controller.dart';
 import '../../../core/constant/color.dart';
 import '../../../data/source/static/onboarding list/onboarding_list.dart';
 

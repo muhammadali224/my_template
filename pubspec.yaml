@@ -1,49 +1,46 @@
-name: template
-description: A new Flutter project.
-# The following line prevents the package from being accidentally published to
-# pub.dev using `flutter pub publish`. This is preferred for private packages.
-publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+name: hodhod
+description: "A new Flutter project."
+publish_to: 'none'
 
 version: 1.0.0+1
 
 environment:
-  sdk: '>=3.0.6 <4.0.0'
-
-
+  sdk: '>=3.2.4 <4.0.0'
 dependencies:
   flutter:
     sdk: flutter
-  cupertino_icons: ^1.0.2
+  auto_size_text:
   get:
-  dartz:
-  lottie:
-  shared_preferences:
-  http:
-  path:
-  dio:
+  get_storage:
+  icons_plus: ^5.0.0
+  auto_size_text_field: ^2.2.2
+#  image_picker:
+#  awesome_notifications:
+  lottie: ^3.0.0
+  elevarm_ui: ^0.10.1
+  flutter_otp_text_field:
+
 
 
 dev_dependencies:
-  flutter_test:
-    sdk: flutter
-  flutter_lints: ^2.0.0
+  flutter_lints:
 
 flutter:
   uses-material-design: true
   fonts:
-    - family: Cairo
+    - family: Open_Sans
       fonts:
-        - asset: assets/fonts/Cairo/Cairo-Regular.ttf
-        - asset: assets/fonts/Cairo/Cairo-Bold.ttf
-          weight: 700
+        - asset: assets/fonts/Open_Sans/OpenSans-Regular.ttf
+        - asset: assets/fonts/Open_Sans/OpenSans-Light.ttf
+        - asset: assets/fonts/Open_Sans/OpenSans-Medium.ttf
+        - asset: assets/fonts/Open_Sans/OpenSans-Bold.ttf
+        - asset: assets/fonts/Open_Sans/OpenSans-ExtraBold.ttf
 
-    - family: PlayfairDisplay
-      fonts:
-        - asset: assets/fonts/PlayfairDisplay/PlayfairDisplay-Regular.ttf
-        - asset: assets/fonts/PlayfairDisplay/PlayfairDisplay-Bold.ttf
-          weight: 700
+
 
   assets:
-    - assets/lottie/
-    - assets/images/
     - assets/
+    - assets/fonts/
+    - assets/images/
+    - assets/lottie/
+

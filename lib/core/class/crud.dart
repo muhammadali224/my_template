@@ -1,74 +1,69 @@
-import 'dart:convert';
-import 'dart:io';
+import 'package:get/get.dart';
 
-import 'package:dartz/dartz.dart';
-import 'package:dio/dio.dart';
-import 'package:http/http.dart' as http;
-import 'package:path/path.dart';
+import '../constant/get_box_key.dart';
+import '../services/app.service.dart';
 
-import '../function/check_internet.dart';
-import 'status_request.dart';
+class ApiProvider extends GetConnect implements GetxService {
+  AppServices myServices = Get.find<AppServices>();
+  late String token;
 
-String _basicAuth =
-    'Basic ${base64Encode(utf8.encode('muhammad:muhammad224'))}';
-Map<String, String> myHeader = {
-  'authorization': _basicAuth,
-};
-final dio = Dio();
+  late Map<String, String> _mainHeaders;
 
-class CRUD {
-  Future<Either<StatusRequest, Map>> postData(String url, Map data) async {
+  ApiProvider() {
+    timeout = const Duration(seconds: 15);
+    token = myServices.getBox.read(GetBoxKey.token) ?? "";
+    _mainHeaders = {
+      "Content-Type": "application/json; charset=utf-8",
+      "Authorization": "Bearer $token",
+    };
+  }
+
+  void updateHeader(String token) {
+    _mainHeaders = {
+      "Content-Type": "application/json; charset=utf-8",
+      "Authorization": "Bearer $token",
+    };
+  }
+
+  Future<Response> getData(String uri, {Map<String, String>? headers}) async {
     try {
-      if (await checkInternet()) {
-        var response = await dio.post(url, data: data);
-        if (response.statusCode == 200 || response.statusCode == 201) {
-          var responseBody = jsonDecode(response.data);
-          // ignore: avoid_print
-          print(responseBody);
-          return right(responseBody);
-        } else {
-          return left(StatusRequest.serverFail);
-        }
-      } else {
-        return left(StatusRequest.offline);
-      }
-    } catch (_) {
-      return left(StatusRequest.serverException);
+      Response response = await get(
+        uri,
+        headers: headers ?? _mainHeaders,
+      );
+      return response;
+    } catch (e) {
+      return Response(statusCode: 1, statusText: e.toString());
     }
   }
 
-  Future<Either<StatusRequest, Map>> addRequestWithImage(url, data, File? image,
-      [String? nameRequest]) async {
-    nameRequest ??= "files";
-
-    var uri = Uri.parse(url);
-    var request = http.MultipartRequest("POST", uri);
-    request.headers.addAll(myHeader);
-
-    if (image != null) {
-      var length = await image.length();
-      var stream = http.ByteStream(image.openRead());
-      stream.cast();
-      var multipartFile = http.MultipartFile(nameRequest, stream, length,
-          filename: basename(image.path));
-      request.files.add(multipartFile);
+  Future<Response> postData(String uri, dynamic body) async {
+    try {
+      Response response = await post(
+        uri,
+        body,
+        headers: _mainHeaders,
+      );
+      return response;
+    } catch (e) {
+      return Response(statusCode: 1, statusText: e.toString());
     }
+  }
 
-    // add Data to request
-    data.forEach((key, value) {
-      request.fields[key] = value;
-    });
-    // add Data to request
-    // Send Request
-    var myRequest = await request.send();
-    // For get Response Body
-    var response = await http.Response.fromStream(myRequest);
-    if (response.statusCode == 200 || response.statusCode == 201) {
-      print(response.body);
-      Map responseBody = jsonDecode(response.body);
-      return Right(responseBody);
-    } else {
-      return const Left(StatusRequest.serverFail);
+  Future<Response> postFile(String uri, Map<String, dynamic> body) async {
+    try {
+      // double progressVal = 0.0;
+      Response response = await post(
+        uri,
+        FormData(body),
+        headers: _mainHeaders,
+        // uploadProgress: (val) {
+        //   progressVal = val;
+        // },
+      );
+      return (response);
+    } catch (e) {
+      return (Response(statusCode: 1, statusText: e.toString()));
     }
   }
 }
