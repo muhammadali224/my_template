@@ -13,7 +13,7 @@ class OnboardingOne extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return OnboardingPage(
-      lottieName: Assets.lottieOnboarding1,
+      lottieName: Assets.lottieOnboarding3,
       titleTextSpan: [
         TextSpan(
           text: "${AppStrings.empowers.tr} ".toTitleCase,
@@ -42,9 +42,9 @@ class OnboardingOne extends StatelessWidget {
                         .copyWith(fontSize: 16),
                   ),
                   TextSpan(
-                    text: "${AppStrings.masrafji.tr}, ",
+                    text: "${AppStrings.hodhod.tr}, ",
                     style: DefaultTextStyle.of(context).style.copyWith(
-                          fontSize: 18,
+                          fontSize: 16,
                           fontWeight: FontWeight.bold,
                           color: AppColor.primaryColor,
                         ),

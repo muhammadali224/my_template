@@ -23,8 +23,9 @@ class OnboardingPage extends StatelessWidget {
           lottieName,
           height: Get.width / 1.2,
           fit: BoxFit.fill,
+          repeat: true,
         ),
-        SizedBox(height: Get.height / 20),
+        (Get.height / 20).gap,
         Padding(
           padding: const EdgeInsets.symmetric(horizontal: 10.0),
           child: RichText(
@@ -34,7 +35,7 @@ class OnboardingPage extends StatelessWidget {
             ),
           ),
         ),
-        15.height,
+        15.gap,
         RichText(
           textAlign: TextAlign.center,
           text: TextSpan(

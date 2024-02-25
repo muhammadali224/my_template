@@ -11,7 +11,7 @@ class AppTheme {
     brightness: Brightness.light,
     scaffoldBackgroundColor: AppColor.lightBackgroundColor,
     useMaterial3: true,
-    colorScheme: ColorScheme(
+    colorScheme: const ColorScheme(
         background: AppColor.lightBackgroundColor,
         brightness: Brightness.light,
         surface: Colors.white,
@@ -27,14 +27,14 @@ class AppTheme {
       centerTitle: true,
       scrolledUnderElevation: 0,
     ),
-    fontFamily: "Open_Sans",
+    fontFamily: "Almarai",
   );
   static ThemeData darkTheme = ThemeData(
     primaryColor: AppColor.primaryColor,
     brightness: Brightness.dark,
     scaffoldBackgroundColor: AppColor.darkBackgroundColor,
     useMaterial3: true,
-    colorScheme: ColorScheme(
+    colorScheme: const ColorScheme(
         background: AppColor.darkBackgroundColor,
         brightness: Brightness.dark,
         surface: Colors.black,
@@ -50,6 +50,6 @@ class AppTheme {
       centerTitle: true,
       scrolledUnderElevation: 0,
     ),
-    fontFamily: "Open_Sans",
+    fontFamily: "Almarai",
   );
 }

@@ -12,7 +12,7 @@ class LocalizationController extends GetxController {
   changeLanguage(String languageCode) async {
     Locale locale = Locale(languageCode);
     myServices.getBox.write(GetBoxKey.language, languageCode);
-    Get.updateLocale(locale);
+    await Get.updateLocale(locale);
   }
 
   @override

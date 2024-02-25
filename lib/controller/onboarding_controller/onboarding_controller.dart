@@ -4,7 +4,7 @@ import 'package:get/get.dart';
 import '../../core/constant/routes.dart';
 
 class OnboardingController extends GetxController {
-  int currentPage = 0;
+  RxInt currentPage = 0.obs;
   late PageController pageController;
 
   @override
@@ -15,16 +15,22 @@ class OnboardingController extends GetxController {
 
   next() {
     currentPage++;
-    if (currentPage > 2) {
-      Get.offAllNamed(AppRoutes.home);
+    if (currentPage > 3) {
+      goToHome();
     } else {
-      pageController.animateToPage(currentPage,
-          duration: const Duration(milliseconds: 600), curve: Curves.easeInOut);
+      pageController.animateToPage(currentPage.value,
+          duration: const Duration(milliseconds: 600),
+          curve: Curves.easeInCirc);
     }
+    update();
+  }
+
+  void goToHome() {
+    Get.offAllNamed(AppRoutes.home);
   }
 
   onPageChanged(int index) {
-    currentPage = index;
+    currentPage.value = index;
     update();
   }
 }

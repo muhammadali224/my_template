@@ -1,7 +1,7 @@
 import '../../constant/app_strings.dart';
 
 Map<String, String> enTranslate = {
-  AppStrings.masrafji: AppStrings.masrafji,
+  AppStrings.hodhod: AppStrings.hodhod,
   AppStrings.loading: AppStrings.loading,
   AppStrings.categories: AppStrings.categories,
   AppStrings.all: AppStrings.all,
@@ -46,20 +46,20 @@ Map<String, String> enTranslate = {
   AppStrings.next: AppStrings.next,
   AppStrings.empowers: AppStrings.empowers,
   AppStrings.onboarding1Title:
-      "users to take control of their finances effortlessly.",
+      "Users can take control of their finances effortlessly.",
   AppStrings.atA: AppStrings.atA,
   AppStrings.onboarding1Desc:
-      "users can track their total balance, income, and expenses.",
+      "Users can track the latest available offers and enjoy saving their money.",
   AppStrings.control: AppStrings.control,
-  AppStrings.onboarding2Title: "Your key to financial clarity and ",
+  AppStrings.onboarding2Title: "Your key to special offers and ",
   AppStrings.onboarding2Desc: "With a user-friendly interface, it ",
   AppStrings.onboarding2Desc2:
-      "he process of monitoring your expenses across various categories.",
+      "the process of viewing offers near you and enjoying discounts.",
   AppStrings.simplifies: AppStrings.simplifies,
   AppStrings.comprehensiveSolution: AppStrings.comprehensiveSolution,
-  AppStrings.onboarding3Title: " for achieving financial goals.",
+  AppStrings.onboarding3Title: " wherever you find us.",
   AppStrings.onboarding3Desc:
-      "empowers you to set, track, and manage your monthly budgets with ease.",
+      "can track offers and discounts in many available stores and categories.",
   AppStrings.firstName: AppStrings.firstName,
   AppStrings.lastName: AppStrings.lastName,
   AppStrings.email: AppStrings.email,
@@ -102,4 +102,16 @@ Map<String, String> enTranslate = {
   AppStrings.sendOTPCodeTO: "We have sent you an SMS with a OTP code to ",
   AppStrings.theNumber: "number",
   AppStrings.resendCodeIn: AppStrings.resendCodeIn,
+  AppStrings.selectLanguage: AppStrings.selectLanguage,
+  AppStrings.ar: "العربية",
+  AppStrings.en: "English",
+  AppStrings.skip: AppStrings.skip,
+  AppStrings.search: AppStrings.search,
+  AppStrings.offers: AppStrings.offers,
+  AppStrings.language: AppStrings.language,
+  AppStrings.profile: AppStrings.profile,
+  AppStrings.setting: AppStrings.setting,
+  AppStrings.nearby: AppStrings.nearby,
+  AppStrings.newest: AppStrings.newest,
+  AppStrings.topRated: AppStrings.topRated,
 };

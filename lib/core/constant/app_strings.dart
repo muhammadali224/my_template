@@ -1,7 +1,9 @@
 class AppStrings {
   AppStrings._();
 
-  static const String masrafji = "Masrafji ";
+  static const String hodhod = "Hodhod ";
+  static const String ar = "Arabic ";
+  static const String en = "English ";
   static const String loading = "Loading...";
   static const String categories = "Categories";
   static const String accept = "Accept";
@@ -12,6 +14,8 @@ class AppStrings {
   static const String logoutExit = "Exit";
   static const String register = "Register";
   static const String signup = "SignUp";
+  static const String selectLanguage = "Select Language";
+  static const String language = "Language";
   static const String value = "Value";
   static const String forgetPassword = "Forget Password ?";
   static const String forgotPassword = "Forgot Password";
@@ -53,6 +57,7 @@ class AppStrings {
   static const String onboarding1Desc = "onboarding1Desc";
   static const String atA = "At a";
   static const String control = "Control";
+  static const String exclusive = "Exclusive";
   static const String onboarding2Title = "onboarding2Title";
   static const String onboarding2Desc = "onboarding2Desc";
   static const String onboarding2Desc2 = "onboarding2Desc2";
@@ -95,4 +100,12 @@ class AppStrings {
   static const String sendOTPCodeTO = "sendOTPCodeTO";
   static const String theNumber = "theNumber";
   static const String resendCodeIn = "Resend Code In :";
+  static const String skip = "Skip";
+  static const String search = "Search";
+  static const String offers = "Offers";
+  static const String profile = "Profile";
+  static const String setting = "Setting";
+  static const String nearby = "Nearby";
+  static const String topRated = "TopRated";
+  static const String newest = "Newest";
 }

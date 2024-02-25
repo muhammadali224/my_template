@@ -13,7 +13,7 @@ class OnboardingThree extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return OnboardingPage(
-      lottieName: Assets.lottieOnboarding3,
+      lottieName: Assets.lottieOnboarding1,
       titleTextSpan: [
         WidgetSpan(
           child: Padding(
@@ -51,7 +51,7 @@ class OnboardingThree extends StatelessWidget {
               text: TextSpan(
                 children: [
                   TextSpan(
-                    text: AppStrings.masrafji.tr,
+                    text: AppStrings.hodhod.tr,
                     style: DefaultTextStyle.of(context).style.copyWith(
                           fontSize: 18,
                           fontWeight: FontWeight.bold,

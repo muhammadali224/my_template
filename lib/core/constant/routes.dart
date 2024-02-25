@@ -3,6 +3,7 @@ class AppRoutes {
 
   static const String onboarding = "/onboarding";
   static const String home = "/home";
+  static const String services = "/services";
 
   //=========== Auth ===========//
   static const String register = "/register";

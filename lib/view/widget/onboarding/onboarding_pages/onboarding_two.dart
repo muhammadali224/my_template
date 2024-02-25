@@ -17,12 +17,10 @@ class OnboardingTwo extends StatelessWidget {
       titleTextSpan: [
         TextSpan(
           text: AppStrings.onboarding2Title.tr.toTitleCase,
-          style: DefaultTextStyle.of(context).style.copyWith(
-                fontSize: 28,
-              ),
+          style: DefaultTextStyle.of(context).style.copyWith(fontSize: 28),
         ),
         TextSpan(
-          text: AppStrings.control.tr,
+          text: AppStrings.exclusive.tr,
           style: DefaultTextStyle.of(context).style.copyWith(
                 fontSize: 28,
                 color: AppColor.primaryColor,

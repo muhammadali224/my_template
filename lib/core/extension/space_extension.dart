@@ -1,7 +1,5 @@
-import 'package:flutter/cupertino.dart';
+import 'package:gap/gap.dart';
 
 extension EmptySpace on num {
-  SizedBox get height => SizedBox(height: toDouble());
-
-  SizedBox get width => SizedBox(width: toDouble());
+  Gap get gap => Gap(toDouble());
 }

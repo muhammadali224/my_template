@@ -1,7 +1,7 @@
 import '../../constant/app_strings.dart';
 
 Map<String, String> arTranslate = {
-  AppStrings.masrafji: "مصرفجي ",
+  AppStrings.hodhod: "هُدهُد ",
   AppStrings.loading: "جار التحميل ...",
   AppStrings.categories: "التصنيفات",
   AppStrings.all: "الكل",
@@ -44,21 +44,23 @@ Map<String, String> arTranslate = {
   AppStrings.updateDate: "تاريخ التعديل",
   AppStrings.upload: "تحميل",
   AppStrings.next: "التالي",
-  AppStrings.empowers: "يمكن",
+  AppStrings.empowers: "يمكّن",
   AppStrings.onboarding1Title:
       "المستخدمين من السيطرة على مواردهم المالية دون عناء.",
   AppStrings.atA: " في ",
   AppStrings.onboarding1Desc:
-      "يمكن للمستخدمين تتبع إجمالي رصيدهم ودخلهم ونفقاتهم.",
+      "يمكن للمستخدمين تتبع أخر العروض المتاحة والأستمتاع بتوفير اموالهم.",
   AppStrings.control: "التحكم",
-  AppStrings.onboarding2Title: "مفتاحك للوضوح المالي و",
+  AppStrings.exclusive: "الحصرية",
+  AppStrings.onboarding2Title: "مفتاحك للعروض الرائعة و",
   AppStrings.onboarding2Desc: "بفضل واجهة سهلة الاستخدام، فإنه ",
-  AppStrings.onboarding2Desc2: "عملية مراقبة نفقاتك عبر الفئات مختلفة.",
+  AppStrings.onboarding2Desc2:
+      "عملية مشاهدة العروض القريبة منك والاستمتاع بالخصومات.",
   AppStrings.simplifies: "يبسط",
   AppStrings.comprehensiveSolution: "الحل الشامل ",
-  AppStrings.onboarding3Title: "لتحقيق الأهداف المالية.",
+  AppStrings.onboarding3Title: "وفي أي مكان تجدنا.",
   AppStrings.onboarding3Desc:
-      "يمكنك من ضبط ميزانيتك الشهرية وتتبعها وإدارتها بسهولة.",
+      "يمكنك من تتبع العروض والخصومات في العديد من المحال التجارية والتصنيفات المتاحة .",
   AppStrings.firstName: "الأسم الأول",
   AppStrings.lastName: "الأسم الأخير",
   AppStrings.email: "البريد الإلكتروني",
@@ -100,4 +102,16 @@ Map<String, String> arTranslate = {
   AppStrings.sendOTPCodeTO: "لقد تم إرسال رمز التحقق إلى ",
   AppStrings.theNumber: "الرقم ",
   AppStrings.resendCodeIn: "إعادة إرسال الرقم في : ",
+  AppStrings.selectLanguage: "إختر اللغة",
+  AppStrings.ar: "العربية",
+  AppStrings.en: "English",
+  AppStrings.skip: "تجاوز",
+  AppStrings.search: "بحث",
+  AppStrings.offers: "العروض",
+  AppStrings.language: "اللغة",
+  AppStrings.profile: "الملف الشخصي",
+  AppStrings.setting: "الإعدادات",
+  AppStrings.nearby: "بقربي",
+  AppStrings.topRated: "الأعلى تقييماً",
+  AppStrings.newest: "الأحدث",
 };

@@ -1,4 +1,4 @@
-name: hodhod
+name: template
 description: "A new Flutter project."
 publish_to: 'none'
 
@@ -14,11 +14,14 @@ dependencies:
   get_storage:
   icons_plus: ^5.0.0
   auto_size_text_field: ^2.2.2
-#  image_picker:
-#  awesome_notifications:
+  intl: ^0.18.1
   lottie: ^3.0.0
-  elevarm_ui: ^0.10.1
+  gap: ^3.0.1
   flutter_otp_text_field:
+  carousel_slider:
+  flutter_advanced_drawer: ^1.3.5
+  day_night_switcher: ^0.2.0+1
+
 
 
 
@@ -35,6 +38,11 @@ flutter:
         - asset: assets/fonts/Open_Sans/OpenSans-Medium.ttf
         - asset: assets/fonts/Open_Sans/OpenSans-Bold.ttf
         - asset: assets/fonts/Open_Sans/OpenSans-ExtraBold.ttf
+    - family: Almarai
+      fonts:
+        - asset: assets/fonts/Almarai/Almarai-Regular.ttf
+        - asset: assets/fonts/Almarai/Almarai-Bold.ttf
+
 
 
 
@@ -42,5 +50,7 @@ flutter:
     - assets/
     - assets/fonts/
     - assets/images/
+    - assets/images/ads/
+    - assets/images/services/
     - assets/lottie/
 

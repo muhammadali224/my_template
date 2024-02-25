@@ -1,4 +1,3 @@
-import 'package:elevarm_ui/elevarm_ui.dart';
 import 'package:flutter/material.dart';
 
 import '../../../core/utils/color.dart';
@@ -15,13 +14,13 @@ class CircularProfile extends StatelessWidget {
         padding: const EdgeInsets.all(15),
         decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(150),
-            border: Border.all(width: 1, color: ElevarmColors.neutral200)),
+            border: Border.all(width: 1, color: AppColor.primaryColor200)),
         child: Container(
           height: 170,
           width: 170,
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(150),
-            gradient: LinearGradient(
+            gradient: const LinearGradient(
                 begin: Alignment.centerLeft,
                 end: Alignment.centerRight,
                 colors: [

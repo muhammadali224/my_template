@@ -14,11 +14,11 @@ class DotFractions extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           ...List.generate(
-            3,
+            4,
             (index) => AnimatedContainer(
               margin: const EdgeInsets.only(right: 5),
               duration: const Duration(milliseconds: 500),
-              width: controller.currentPage == index ? 20 : 6,
+              width: controller.currentPage.value == index ? 20 : 6,
               height: 6,
               decoration: BoxDecoration(
                 color: AppColor.primaryColor,

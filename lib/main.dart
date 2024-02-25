@@ -29,7 +29,7 @@ class MyApp extends StatelessWidget {
 
     return GetMaterialApp(
       locale: controller.initLanguages,
-      // locale: Locale("ar"),
+      // locale: const Locale(GetBoxKey.arLanguage),
 
       debugShowCheckedModeBanner: false,
       defaultTransition: Transition.cupertino,

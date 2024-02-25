@@ -19,7 +19,7 @@ class OnboardingDotController extends StatelessWidget {
                   (index) => AnimatedContainer(
                     duration: const Duration(milliseconds: 300),
                     margin: const EdgeInsets.only(right: 5),
-                    width: controller.currentPage == index ? 20 : 6,
+                    width: controller.currentPage.value == index ? 20 : 6,
                     height: 6,
                     decoration: BoxDecoration(
                         color: AppColor.primaryColor,

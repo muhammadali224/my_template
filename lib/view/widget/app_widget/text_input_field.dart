@@ -1,4 +1,3 @@
-import 'package:elevarm_ui/elevarm_ui.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -6,6 +5,7 @@ import 'package:flutter/services.dart';
 import '../../../core/extension/space_extension.dart';
 import '../../../core/utils/border.dart';
 import '../../../core/utils/color.dart';
+import '../../../core/utils/font_size.dart';
 
 class AppTextFormField extends StatelessWidget {
   final String? label;
@@ -98,7 +98,7 @@ class AppTextFormField extends StatelessWidget {
     EdgeInsetsGeometry prefixAddOnTextContentPadding;
 
     contentPadding = const EdgeInsets.symmetric(
-      vertical: 16.0,
+      vertical: 12.0,
       horizontal: 14.0,
     );
     prefixAddOnTextContentPadding = const EdgeInsets.symmetric(
@@ -118,7 +118,6 @@ class AppTextFormField extends StatelessWidget {
           child: Center(
             child: Text(
               prefixText!,
-              // style: LibraryTextStyles.interMdRegularNeutral300,
             ),
           ),
         ),
@@ -133,7 +132,7 @@ class AppTextFormField extends StatelessWidget {
           ),
           child: Icon(
             prefixIconAssetName!,
-            color: ElevarmColors.neutral300,
+            color: AppColor.primaryColor200,
             size: 25.0,
           ),
         ),
@@ -149,8 +148,8 @@ class AppTextFormField extends StatelessWidget {
             border: Border(
               right: BorderSide(
                 color: errorText == null
-                    ? ElevarmColors.neutral100
-                    : ElevarmColors.danger300,
+                    ? AppColor.primaryColor200
+                    : AppColor.primaryColor200,
               ),
             ),
             // color: Colors.yellow,
@@ -171,9 +170,9 @@ class AppTextFormField extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         label != null
-            ? ElevarmInputFieldLabel(
-                label: label!,
-                isRequired: isRequired,
+            ? Text(
+                label!,
+                style: const TextStyle(fontSize: AppFontSizes.sm),
               )
             : Container(),
         Container(
@@ -245,7 +244,7 @@ class AppTextFormField extends StatelessWidget {
             ? Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  6.height,
+                  6.gap,
                   Text(
                     helperText!,
                   ),
@@ -256,7 +255,7 @@ class AppTextFormField extends StatelessWidget {
             ? Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  6.height,
+                  5.gap,
                   Text(
                     errorText!,
                   ),
